@@ -1,0 +1,36 @@
+
+    <div class="container">
+      <div class="content">
+        <p-card>
+          <div class="p-fluid grid">
+            <h1 style="text-align:center">Login</h1>
+            <form [formGroup]="loginForm" (ngSubmit)="submit()">
+              <div>
+                <span class="p-float-label">
+                  <input formControlName="username" type="text" id="inputtext" pInputText>
+                  <label for="inputtext">Username</label>
+                </span>
+              </div>
+              <br>
+              <div>
+                <span class="p-float-label">
+                  <input formControlName="password" type="password" pInputText>
+                  <label for="password">Password</label>
+                </span>
+              </div>
+              <br>
+              <button pButton pRipple type="submit" label="Login"></button>&nbsp;
+            </form>
+            <div>
+              <p style="text-align: center; ">
+                Don't have account ?<a routerLink="/signup">Sign Up</a></p>
+            </div>
+          </div>
+          <br>
+        </p-card>
+      </div>
+    </div>
+
+
+
+
